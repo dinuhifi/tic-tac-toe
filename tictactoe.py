@@ -2,7 +2,7 @@ grid= []
 for i in range(5):
     row = []
     for j in range(5):
-        row.append(" ")
+        row.append("　")
     grid.append(row)
 
 for i in range(9):
@@ -11,8 +11,8 @@ for i in range(9):
         row = int(input("enter row(0 to 2): "))
         col = int(input("enter column(0 to 2): "))
 
-        if grid[row*2][col*2] == " ":
-            grid[row*2][col*2] = "X"
+        if grid[row*2][col*2] == "　":
+            grid[row*2][col*2] = "Ｘ"
         else:
             print("slot taken, try other box")
             continue
@@ -21,11 +21,11 @@ for i in range(9):
             for j in range(5):
                 if i%2 == 0:
                     if j%2 == 0:
-                        print(grid[i][j], end=" ")
+                        print(grid[i][j], end="")
                     else:
-                        print("|", end=" ")
+                        print("｜", end="")
                 else:
-                    print("-", end=" ")
+                    print("－", end="")
             print()
 
     else:
@@ -33,8 +33,8 @@ for i in range(9):
         row = int(input("enter row(0 to 2): "))
         col = int(input("enter column(0 to 2): "))
 
-        if grid[row*2][col*2] == " ":
-            grid[row*2][col*2] = "O"
+        if grid[row*2][col*2] == "　":
+            grid[row*2][col*2] = "Ｏ"
         else:
             print("slot taken, try other box")
             continue
@@ -43,9 +43,9 @@ for i in range(9):
             for j in range(5):
                 if i%2 == 0:
                     if j%2 == 0:
-                        print(grid[i][j], end=" ")
+                        print(grid[i][j], end="")
                     else:
-                        print("|", end=" ")
+                        print("｜", end="")
                 else:
-                    print("-", end=" ")
+                    print("－", end="")
             print()
